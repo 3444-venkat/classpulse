@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #f8fafc;
+    background-color: #0d110f;
+    min-height: 100vh;
+  }
+  
+  .font-mono, [class*="font-mono"] {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .font-chalk {
+    font-family: 'Caveat', 'Architects Daughter', cursive;
+  }
+
+  .font-math {
+    font-family: 'Kalam', 'Caveat', cursive;
+  }
+
+  .font-architect {
+    font-family: 'Architects Daughter', cursive;
+  }
+}
+
+/* Blackboard Theme & Chalk Aesthetics */
+.chalk-board-bg {
+  background-color: #0f1412;
+  background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    radial-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 32px 32px, 16px 16px;
+  background-position: 0 0, 8px 8px;
+}
+
+.chalk-board-slate {
+  background-color: #121715;
+  background-image: 
+    radial-gradient(ellipse at 50% 20%, rgba(255, 255, 255, 0.03) 0%, transparent 70%),
+    radial-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 100% 100%, 24px 24px;
+}
+
+.chalk-board-green {
+  background-color: #101c16;
+  background-image: 
+    radial-gradient(ellipse at 50% 15%, rgba(255, 255, 255, 0.04) 0%, transparent 75%),
+    radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 28px 28px;
+}
+
+.chalk-board-pure {
+  background-color: #000000;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Chalk line & glow */
+.chalk-line {
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.chalk-line-dashed {
+  border-style: dashed;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.chalk-glow {
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
+}
+
+.chalk-border-box {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5), 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+/* Blackboard Wooden Frame effect */
+.chalk-frame {
+  box-shadow: 
+    0 0 0 3px #1e2421,
+    0 0 0 5px rgba(255, 255, 255, 0.15),
+    0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f1412;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.45);
+}

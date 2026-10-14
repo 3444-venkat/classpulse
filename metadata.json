@@ -1,0 +1,6 @@
+{
+  "name": "ClassPulse",
+  "description": "Student timetable manager with 10-minute lecture reminder notifications, audio chimes, AI schedule scanner, and weekly planner.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
